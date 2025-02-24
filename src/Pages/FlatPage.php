@@ -103,7 +103,7 @@ abstract class FlatPage extends Page
 
         return [
             Actions\SelectAction::make('switchLocale')
-                ->label(fn() => strtoupper($this->activeLocale))
+                ->label(fn () => strtoupper($this->activeLocale))
                 ->options($this->getLocaleOptions()),
         ];
     }
